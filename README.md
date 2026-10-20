@@ -1,16 +1,23 @@
-# React + Vite
+# List Mahasiswa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi daftar mahasiswa sederhana yang dibuat dengan **Vite + React**.
 
-Currently, two official plugins are available:
+Setiap mahasiswa ditampilkan dalam kartu berisi nama, NIM, angkatan, dan lencana status (aktif / tidak aktif) — semua dihasilkan oleh satu komponen `KartuMahasiswa` yang menerima props.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Menjalankan proyek
 
-## React Compiler
+```bash
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Lalu buka alamat lokal yang ditampilkan di terminal (misalnya `http://localhost:5173`).
 
-## Expanding the ESLint configuration
+## Struktur
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  components/KartuMahasiswa.jsx  # komponen kartu mahasiswa
+  App.jsx                        # pemakaian komponen dengan props
+  index.css                      # penataan tampilan
+```
