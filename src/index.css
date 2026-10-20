@@ -53,3 +53,26 @@ h1 {
   color: #dc2626;
   background: #fee2e2;
 }
+
+.filter {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tombol-filter {
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #fff;
+  color: #1d4ed8;
+  font-size: 14px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+
+.tombol-filter.aktif {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #fff;
+}
